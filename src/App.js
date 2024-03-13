@@ -1,18 +1,16 @@
 import './App.css';
 
 function App() {
-let a = ['01','02','03','04','05']
-let title = "Heading"
+  let headings = ['h1', 'h2', 'h3', 'h4', 'h5'];
+  let title = "Heading Tag";
 
   return (
     <div className="App">
       <h1>{title}</h1>
-      {
-       a.map((i)=>{
-         return <p>{i}</p>
-        })
-      }
-    
+      {headings.map((heading, index) => {
+        const HeadingTag = heading;
+        return <HeadingTag key={index}>{heading}</HeadingTag>;
+      })}
     </div>
   );
 }
