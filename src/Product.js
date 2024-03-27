@@ -1,7 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-function Product({items}) {
+function Product({items,index}) {
 
   return (
     <Card style={{ width: '18rem' }}>
